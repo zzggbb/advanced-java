@@ -1,0 +1,29 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+public class Skype extends JFrame{
+	
+	public static void main(String[] args) {
+		new Skype();
+	}
+
+	public Skype() {
+		super("Skype Instant Messenger");
+		setSize(new Dimension(400,600));
+		setLayout(new GridLayout(3,1));
+		initialize();
+		setVisible(true);
+	}
+	
+	private void initialize() {
+		JTextPane typePane = new JTextPane();
+		typePane.setEditable(false);
+		typePane.setSize(new Dimension(400,500));
+		add(typePane);
+		
+		JTextField field = new JTextField();
+		field.setPreferredSize(new Dimension(400,100));
+		add(field);	
+	}
+}

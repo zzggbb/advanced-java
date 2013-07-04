@@ -1,0 +1,22 @@
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import javax.swing.*;
+
+public class Store extends JFrame {
+	
+	public Store() {
+		super("Store");
+		setSize(new Dimension(400,400));
+		setLayout(new FlowLayout());
+		initialize();
+		setVisible(true);
+	}
+
+	private void initialize() {
+		InventoryPanel topPanel = new InventoryPanel();
+		add(topPanel);
+		
+	}
+
+}

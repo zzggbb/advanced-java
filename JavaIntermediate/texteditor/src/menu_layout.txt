@@ -1,0 +1,34 @@
+JMenuBar mainBar = new JMenuBar();
+
+// children menus of mainBar
+JMenu fileMenu = new JMenu();
+JMenu editMenu = new JMenu();
+JMenu viewMenu = new JMenu();
+
+// child menus of fileMenu
+JMenu openRecentMenu = new JMenu();
+
+// children menus of editMenu
+JMenu convertCase = new JMenu();
+
+// children menus of viewMenu
+JMenu colorMenu = new JMenu();
+
+// children items of openRecentMenu
+
+
+// children items of convertCase
+
+
+// children items of colorMenu
+JMenuItem colorRed = new JMenuItem("Red");
+colorRed.setActionCommand("setColorRed");
+colorRed.addActionListener(this);
+
+JMenuItem colorOrange = new JMenuItem("Orange");
+colorOrange.setActionCommand("setColorOrange");
+colorOrange.addActionListener(this);
+
+
+
+

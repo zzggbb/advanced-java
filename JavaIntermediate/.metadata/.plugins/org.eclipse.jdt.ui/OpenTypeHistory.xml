@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.awt(AWTError.class[AWTError" modifiers="33" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.awt(Event.class[Event" modifiers="33" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;javax.swing.event(MouseInputListener.class[MouseInputListener" modifiers="1537" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.awt.event(MouseListener.class[MouseListener" modifiers="1537" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.awt.event(MouseMotionListener.class[MouseMotionListener" modifiers="1537" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/Extensions\/QTJava.zip&lt;quicktime.app.event(MouseMoveListener.class[MouseMoveListener" modifiers="1050113" timestamp="1346986575000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/Extensions\/QTJava.zip&lt;quicktime.app.event(MouseTargetListener.class[MouseTargetListener" modifiers="1050113" timestamp="1346986575000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;java.awt.event(MouseWheelListener.class[MouseWheelListener" modifiers="1537" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/Extensions\/j3dutils.jar&lt;com.sun.j3d.utils.behaviors.mouse(MouseBehaviorCallback.class[MouseBehaviorCallback" modifiers="1537" timestamp="1310672609000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/Extensions\/QTJava.zip&lt;quicktime.app.event(MouseButtonListener.class[MouseButtonListener" modifiers="1050113" timestamp="1346986575000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/Extensions\/QTJava.zip&lt;quicktime.app.event(MouseEnterExitListener.class[MouseEnterExitListener" modifiers="1050113" timestamp="1346986575000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;org.w3c.dom.events(MouseEvent.class[MouseEvent" modifiers="1537" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;javax.swing(JMenu.class[JMenu" modifiers="33" timestamp="1365358141000"/>
+<typeInfo handle="=ZaneApp/\/System\/Library\/Java\/JavaVirtualMachines\/1.6.0.jdk\/Contents\/Classes\/classes.jar&lt;javax.swing(JFrame.class[JFrame" modifiers="33" timestamp="1365358141000"/>
+</typeInfoHistroy>

@@ -1,0 +1,57 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+
+public class Skype extends JFrame implements ActionListener {
+	
+	ChatClient client;
+	JTextArea pane;
+	JTextField field;
+	
+	public static void main(String[] args) {
+		new Skype();
+	}
+
+	public Skype() {
+		super("Skype Instant Messenger");
+		setSize(new Dimension(400,600));
+		setLayout(new FlowLayout());
+		client = new ChatClient();
+		initialize();
+		setVisible(true);
+	}
+	
+	private void initialize() {
+		JPanel messagePanel = new JPanel();
+		pane = new JTextArea(30,40);
+		pane.setEditable(false);
+		messagePanel.add(pane);
+		add(messagePanel);
+		
+		JPanel submitPanel = new JPanel();
+		JButton button = new JButton("Submit");
+		button.setActionCommand("submit");
+		button.addActionListener(this);
+		
+		
+		submitPanel.setLayout(new FlowLayout());
+		field = new JTextField(20);
+		field.add(button);
+		submitPanel.add(field);
+	}
+
+	public void update() {
+		String contents = pane.getText();
+		pane.setText(contents + client.getUpdate());
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent a) {
+		if (a.getActionCommand().equals("submit")) {
+			client.submit(field.getText());
+			field.setText("");
+		}		
+	}
+}

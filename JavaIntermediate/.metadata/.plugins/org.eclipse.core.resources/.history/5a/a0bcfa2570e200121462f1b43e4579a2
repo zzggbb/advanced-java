@@ -1,0 +1,41 @@
+
+public class LinkedList {
+	ListNode first;
+	
+	public LinkedList() {
+		
+	}
+	
+	public void add(int number) {
+		if (first == null) {
+			first = new ListNode(number);
+		} else {
+			ListNode tempNode = first;
+			while (tempNode.getNext() != null) {
+				tempNode = tempNode.getNext();
+			}
+			tempNode.setNext(new ListNode(number));
+		}
+	}
+	public void remove(int number) {
+		
+	}
+	public void print() {
+		ListNode tempNode = first;
+		System.out.println("[");
+		while (tempNode != null) {
+			System.out.println(tempNode.getValue() + ", ");
+			tempNode = tempNode.getNext();
+		}
+		System.out.println("]");
+	}
+	public int size() {
+		int size = 0;
+		ListNode tempNode = first;
+		while (tempNode != null) {
+			size ++ ;
+			tempNode = tempNode.getNext();
+		}
+		return size;
+	}
+}

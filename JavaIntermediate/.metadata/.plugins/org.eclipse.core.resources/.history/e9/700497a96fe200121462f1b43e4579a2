@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+
+public class ListFun {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		list.add(5);
+		list.add(4);
+		list.add(6);
+		list.print();
+		System.out.println(list.size());
+		
+
+	}
+
+}

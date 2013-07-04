@@ -1,0 +1,22 @@
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+public class InventoryPanel extends JPanel {
+	
+	public InventoryPanel() {
+		super();
+		this.setSize(new Dimension(400,200));
+		initialize();
+		setLayout(new GridLayout());
+	}
+
+	private void initialize() {
+		JButton fooButton = new JButton("foo");
+		
+		
+	}
+}
+	
+	

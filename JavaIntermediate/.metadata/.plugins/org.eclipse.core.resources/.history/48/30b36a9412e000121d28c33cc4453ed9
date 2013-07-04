@@ -1,0 +1,159 @@
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
+import java.lang.reflect.Array;
+
+import javax.swing.*;
+
+@SuppressWarnings("serial")
+
+public class TextEditor extends JApplet implements ActionListener {
+	private TextEditorModel model;
+
+	// add components here
+	private JTextField field;
+	private JTextArea area;
+	
+	// Remember whether or not we have saved our work.
+	private boolean saved = false;
+	private String saveFile;
+	
+	public TextEditor() {
+		setVisible(true);
+		initEditor();
+		initializeComponents();
+	}
+
+	/**
+	 * Called by the browser or applet viewer to inform this JApplet that it has
+	 * been loaded into the system. It is always called before the first time
+	 * that the start method is called.
+	 */
+	public void initEditor() {
+		model = new TextEditorModel();
+		this.setSize(new Dimension(500, 500));
+		this.setLayout(new GridLayout(1,1));
+		area = new JTextArea();
+		area.setLineWrap(true);
+		add(area);
+	}
+
+	/**
+	 * Initializes the components of this applet.
+	 */
+	public void initializeComponents() {
+		JMenuBar bar = new JMenuBar();
+		
+		// Main Menus
+		JMenu fileMenu = new JMenu();
+		JMenu editMenu = new JMenu();
+		JMenu viewMenu = new JMenu();
+		
+		// Sub Menus
+		JMenu openRecentMenu = new JMenu();
+		JMenu convertCaseMenu = new JMenu();
+		JMenu colorMenu = new JMenu(); 
+		
+		// Items
+		JMenuItem newFile = new JMenuItem("New File");
+		JMenuItem openFile = new JMenuItem("Open");
+		JMenuItem saveFile = new JMenuItem("Save");
+		JMenuItem saveFileAs = new JMenuItem("Save As");
+		JMenuItem closeFile = new JMenuItem("Close");
+		
+		JMenuItem editUndo = new JMenuItem("Undo");
+		JMenuItem editRedo = new JMenuItem("Redo");
+		JMenuItem editCopy = new JMenuItem("Copy");
+		JMenuItem editCut = new JMenuItem("Cut");
+		JMenuItem editPaste = new JMenuItem("Paste");
+		
+		JMenuItem wordWrap = new JMenuItem("Toggle Word Wrap");
+		JMenuItem zoomIn = new JMenuItem("Zoom In");
+		JMenuItem zoomOut = new JMenuItem("Zoom Out");
+		
+		JMenuItem convertUpper = new JMenuItem("Convert to Uppercase");
+		JMenuItem convertLower = new JMenuItem("Convert to Lowercase")
+		
+		
+		
+		/**
+		bar.add(createMenu( "File", new String[][] {{"newfile","New"},{"openfile","Open"},{"savefile","Save"},{"savefileas","Save As"},{"closefile","Close"}} ));
+		bar.add(createMenu( "Edit", new String[][] {{"editundo","Undo"},{"editredo","Redo"},{"editcopy","Copy"},{"editcut","Cut"},{"editpaste","Paste"}} ));
+		bar.add(createMenu( "View", new String[][] {{"wordwrap","Toggle Word Wrap"},{"zoomin","Zoom In"},{"zoomout","Zoom Out"}} ));
+		setJMenuBar(bar);
+		bar.add(createMenu( "File", new String[][] {{"newfile","New"},{"openfile","Open"},{"savefile","Save"},{"savefileas","Save As"},{"closefile","Close"}, {"#recent=Recent", "foo=bar,bar=quux"}} ));
+		*/
+	}
+	/**
+	public JMenuItem createItem(String itemName, String itemLabel) {
+		JMenuItem item = new JMenuItem(itemLabel);
+		item.setActionCommand(itemName);
+		item.addActionListener(this);
+		return item;
+	
+	}
+	*/
+	/**
+	public JMenu createMenu(String menuName, String[][] items) {
+		JMenu menu = new JMenu(menuName);
+		for (String[] item: items) {
+			if (item[0].startsWith("#")) {
+				String[] description = item[0].substring(1).split("=");
+				//menu.add(createMenu(item[0].substring(1), item[1].split(",")));
+			} else {
+				menu.add(createItem( item[0], item[1] ));
+			}
+		}
+		return menu;
+	}
+	*/
+	
+	/**
+	 * This method is called whenever a component with an action value is
+	 * activated.
+	 */
+	public void actionPerformed(ActionEvent a) {
+		if (a.getSource() == field) {
+			// Then our text field is sending us data.
+		}
+		else {
+			String action = a.getActionCommand();
+			if (action.equals("newfile")) {
+				
+			}
+			if (action.equals("openfile")) {
+				String fileName = JOptionPane.showInputDialog("What should I open?");
+				
+			}
+			if (action.equals("savefile")) {
+				
+			}
+			if (action.equals("savefileas")) {
+				JFileChooser chooser = new JFileChooser();
+				int option = chooser.showSaveDialog(this);
+				if (option == JFileChooser.APPROVE_OPTION) {
+					saved = true;
+					//saveFile = 
+				}
+			}
+			if (action.equals("closefile")) {
+				
+			}
+			if (action.equals("editundo")) {
+				
+			}
+			if (action.equals("editredo")) {
+				
+			}
+			if (action.equals("editcopy")) {
+				
+			}
+			
+		}
+	}
+}

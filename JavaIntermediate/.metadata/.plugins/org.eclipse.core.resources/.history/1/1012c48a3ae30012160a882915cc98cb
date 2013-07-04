@@ -1,0 +1,11 @@
+
+public class TreeFun {
+	public static void main(String[] args) {
+		BinaryTree tree = new BinaryTree();
+		for (int n = 1; n < 20; n++) {
+			tree.add(n);
+		}
+		tree.print();
+	}
+
+}
