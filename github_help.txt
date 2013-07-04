@@ -1,0 +1,28 @@
+to update repo:
+
+	open terminal
+
+	cd to folder with repo files/subfolders
+
+	git add * (will add every file)
+
+	git commit -m "<message>"
+
+	git push origin master
+
+
+to add a folder to a repo:
+	
+	cd to folder
+
+ 	git init
+
+ 	git add * (folders/files)
+
+ 	git commit -m "<message>"
+
+ 	git remote add origin <.git url to repo>
+
+ 	git pull origin master
+
+ 	git push origin master
