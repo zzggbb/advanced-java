@@ -2,11 +2,11 @@ to update repo:
 
 	open terminal
 
-	cd to folder with repo files/subfolders
+	cd to folder
 
-	git add * (will add every file)
+	git add * 						//will add every file
 
-	git commit -m "<message>"
+	git commit -a -m "<message>" 	//adding -a will stop those pesky duplicates
 
 	git push origin master
 
@@ -17,7 +17,7 @@ to add a folder to a repo:
 
  	git init
 
- 	git add * (folders/files)
+ 	git add * 						//will add every file
 
  	git commit -m "<message>"
 
