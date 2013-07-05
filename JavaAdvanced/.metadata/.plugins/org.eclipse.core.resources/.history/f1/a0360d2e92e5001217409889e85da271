@@ -1,0 +1,27 @@
+import java.awt.Point;
+
+
+public class TicTacToePlayer {
+	
+	TicTacToeGame game;
+	
+	public TicTacToePlayer(TicTacToeGame g) {
+		
+		game = g;
+	}
+	
+	public Point getMove() {
+		Point p = new Point(1,1);
+		return p;
+	}
+	
+	public void printAllMoves() {
+		for (int x = 0; x < 3; x++) {
+			for (int y = 0; y < 3; y++) {
+				if (game.canPlacePieceAt(x, y)) {
+					System.out.println("Position " + x + ", " + y + " is open");
+				}
+			}
+		}
+	}
+}

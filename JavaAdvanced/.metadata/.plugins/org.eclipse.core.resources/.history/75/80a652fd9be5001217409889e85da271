@@ -1,0 +1,42 @@
+
+public class TicTacToePlayer {
+	
+	TicTacToeGame game;
+	
+	public TicTacToePlayer(TicTacToeGame g) {
+		
+		game = g;
+	}
+	
+	public TicTacToeMove getMove() {
+		//return getFirstMoveFound();
+		return getRandomMove();
+	}
+	
+	public TicTacToeMove getFirstMoveFound() {
+		for (int x = 0; x < 3; x++) {
+			for (int y = 0; y < 3; y++) {
+				if (game.canPlacePieceAt(x, y)) {
+					return new TicTacToeMove(game,x,y);
+				}
+			}
+		}
+		return null;
+	}
+	
+	public TicTacToeMove getRandomMove() {
+		boolean foundMove = false;
+		while (foundMove == false) {
+			int x = getRandom(0,2);
+			int y = getRandom(0,2);
+			if (game.canPlacePieceAt(x,y)) {
+				return new TicTacToeMove(game,x,y);
+			}
+		}
+		return null;
+	}
+	
+	public int getRandom(int min, int max) {
+		return min + (int)(Math.random() * ((max - min) + 1));
+	}
+}
